@@ -22,9 +22,6 @@ RUN pnpm run build
 # Install the dependencies
 RUN pnpm install --prefer-frozen-lockfile --prefer-offline --prod
 
-# Copy the .env file containing the bot token to the working directory
-COPY .env ./
-
 # Expose the default port for the bot (optional, only needed if your bot uses a specific port for communication)
 # EXPOSE 3000
 
